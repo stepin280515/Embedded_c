@@ -4,10 +4,10 @@ PROJ_NAME = GLOW
 BUILD_DIR = Build
 
 # All Source code files
-SRC = src/activity(1).c\
-src/activity(2).c\
-src/activity(3).c\
-src/activity(4).c\
+SRC = src/actvity1.c\
+src/actvity2.c\
+src/actvity3.c\
+src/actvity4.c\
 SeatHeatingApp.c
 
 # All header file paths
