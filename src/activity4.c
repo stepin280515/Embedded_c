@@ -8,7 +8,7 @@
 
 
 
-void USARTInit(uint16_t ubrr_value){
+void USART_Init(uint16_t ubrr_value){
     USART_BAUD_PIN_L = ubrr_value;
     USART_BAUD_PIN_H  =SET_BAUD_H;
     USART_CONTROL_PIN_C =SET_CONTROL_PIN_C_8BIT;
@@ -21,7 +21,7 @@ void USARTInit(uint16_t ubrr_value){
  * @param data 
  */
 
-void USARTWriteChar(int data){
+void USART_WriteChar(int data){
     if(data==1){
         while(TRANSMITTING_DATA){}
         USART_DATA_PIN='2';
