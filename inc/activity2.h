@@ -1,7 +1,19 @@
-#ifndef ACTIVITY2_H_INCLUDED
-#define ACTIVITY2_H_INCLUDED
+#ifndef ADC_H_INCLUDED
+#define ADC_H_INCLUDED
 
-void InitADC()
-uint16_t ReadADC(uint8_t ch)
+#include <avr/io.h>
+/**
+ * @brief A function to initialise the analog to digital converter
+ *
+ */
+void Init_ADC();
 
-#endif // ACTIVITY2_H_INCLUDED
+/**
+ * @brief A function to receive temperature sensor inputs from analog pin and output it to a register ADC which has 2 8 bit registers ADCL and ADCH.
+ *
+ * @param ch
+ * @return uint16_t
+ */
+uint16_t Read_ADC(uint8_t ch);
+
+#endif // ADC_H_INCLUDED
