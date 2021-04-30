@@ -1,5 +1,5 @@
 #include <avr/io.h>
-#include "seatandheater.h"
+#include "activity1.h"
 
 /**
  * @brief function for declaring peripherals led,button,heater.
