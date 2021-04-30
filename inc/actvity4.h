@@ -1,5 +1,5 @@
-#ifndef _ACTIVITY(4)_H_
-#define _ACTIVITY(4)_H_
+#ifndef _ACTVITY4_H_
+#define _ACTVITY4_H_
 #define USART_BAUD_PIN_L (UBRR0L) /**< LSB of BAUD **/
 #define USART_BAUD_PIN_H (UBRR0H) /**< MSB of BAUD **/
 #define USART_CONTROL_PIN_C (UCSR0C) /**< USART CONTROL PIN C **/
