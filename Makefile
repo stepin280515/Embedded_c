@@ -8,7 +8,7 @@ SRC = src/activity1.c\
 src/activity2.c\
 src/activity3.c\
 src/activity4.c\
-main.c
+SeatHeatingApp.c
 
 # All header file paths
 INC = -I inc
