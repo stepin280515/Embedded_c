@@ -1,6 +1,21 @@
-#ifndef ACTIVITY1_H_INCLUDED
-#define ACTIVITY1_H_INCLUDED
+#ifndef SEATANDHEATER_H_INCLUDED
+#define SEATANDHEATER_H_INCLUDED
 
-void activity1()
 
-#endif // ACTIVITY1_H_INCLUDED
+#include <avr/io.h>
+
+
+#define SET_LED_AS_OUTPUT DDRB |=(1<<PB0)
+#define SET_BUTTON_AS_INPUT DDRD &=(1<<PD0)
+#define SET_HEATER_AS_INPUT DDRD &=(1<<PD4)
+#define PULL_UP_BUTTON PORTD |=(1<<PD0)
+#define PULL_UP_HEATER PORTD |=(1<<PD4)
+#define BUTTON_ON !(PIND &(1<<PD0))
+#define HEATER_ON !(PIND &(1<<PD4))
+#define LED_ON PORTB |=(1<<PB0)
+#define LED_OFF PORTB &=~(1<<PB0)
+
+void peripheral_init();
+
+
+#endif // SEATANDHEATER_H_INCLUDED
