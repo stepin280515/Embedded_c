@@ -10,8 +10,8 @@
 int main(void)
 {
     peripheral_init(); //Initialise the button input registers
-    Init_ADC(); //Initialise the ADC
-    TimerWaveGenMode(); // Initialise timer
+    ADC_Init(); //Initialise the ADC
+    TimerWaveGenerationMode(); // Initialise timer
     uint16_t temp;
     int d;
 
@@ -25,11 +25,11 @@ int main(void)
        {
                 _delay_ms(2000);
                 LED_ON; //make 0th bit of port B as 1, makes led glow
-                temp = Read_ADC(0);
-                d=outputbyPWM(temp);
+                temp = Read_ADC_Value(0);
+                d=outputfromPWM(temp);
                 _delay_ms(20);
-                USARTInit(103);
-            USARTWriteChar(d);
+                USART_Init(103);
+            USART_WriteChar(d);
             
                 
             }
