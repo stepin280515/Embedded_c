@@ -28,8 +28,8 @@ int main(void)
                 temp = Read_ADC_Value(0);
                 d=outputfromPWM(temp);
                 _delay_ms(20);
-                USARTInit(103);
-            USARTWriteChar(d);
+                USART_Init(103);
+            USART_WriteChar(d);
             
                 
             }
