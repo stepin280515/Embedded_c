@@ -1,5 +1,5 @@
-#ifndef _ACTIVITY(1)_H_
-#define _ACTIVITY(1)_H_
+#ifndef _ACTVITY1_H_
+#define _ACTVITY1_H_
 #include <avr/io.h>
 
 
