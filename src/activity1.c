@@ -1,12 +1,16 @@
 #include <avr/io.h>
+#include "seatandheater.h"
 
-void activity1()
-{
+/**
+ * @brief function for declaring peripherals led,button,heater.
+ *
+ */
+void peripheral_init(){
+SET_LED_AS_OUTPUT;
+ SET_BUTTON_AS_INPUT;
+ SET_HEATER_AS_INPUT;
+ PULL_UP_BUTTON;
+ PULL_UP_HEATER ;
 
-    DDRB |=(1<<PB0);    //SET TO 1
-    DDRD &=(1<<PD0);   //CLEAR BIT
-    PORTD |=(1<<PD0);   //SET TO 1
-    DDRD &=(1<<PD4);   //CLEAR BIT
-    PORTD |=(1<<PD4);    //SET TO 1
 
 }
