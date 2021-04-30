@@ -1,4 +1,4 @@
-#include "activity(1).h"
+#include "actvity1.h"
 
 /**
  * @brief function for declaring peripherals led,button,heater.
