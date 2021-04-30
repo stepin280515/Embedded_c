@@ -1,8 +1,8 @@
 #define F_CPU 16000000UL
-#include "activity(1).h"
-#include "activity(2).h"
-#include "activity(3).h"
-#include "activity(4).h"
+#include "actvity1.h"
+#include "actvity2.h"
+#include "actvity3.h"
+#include "actvity4.h"
 
 #include<avr/io.h>
 #include<util/delay.h>
