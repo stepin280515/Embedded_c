@@ -1,7 +1,7 @@
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
-#include "activity3.h"
+#include "activity(3).h"
 void TimerWaveGenerationMode(void){
 
     SET_TIMER1A_FAST_PWM; //setting timer1 for PWM
